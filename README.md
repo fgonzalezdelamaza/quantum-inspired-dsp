@@ -12,23 +12,6 @@ Each time step of the simulated wavefunction corresponds to one modulation frame
 These frames are stored as matrices (e.g., 2048×512, 4096×512) and applied directly to FFT-domain audio, creating a continuous link between quantum dynamics and timbre.
 
 
-## 2. Repository Structure
-
-quantum-inspired-dsp-instrument/
-│
-├── max-msp/
-│ ├── FG_Spectral_DSP.maxpat
-│ ├── SpectralFFT.maxpat
-│ ├── real_psi_coherent_coll_2048x512.txt
-│ ├── real_psi_kitten_coll_4096x512.txt
-│
-└── MaxForLive/
-│ ├── FG_Quantum_Spectral.amxd
-│ ├── SpectralFFT.maxpat
-│ ├── real_psi_coherent_coll_2048x512.txt
-│ ├── real_psi_kitten_coll_4096x512.txt
-
-
 
 ## max-msp/
 
@@ -60,7 +43,7 @@ It provides access to parameters such as:
 This interface enables expressive real-time interaction with quantum-inspired timbral transformations.
 
 
-## 3. DSP Architecture and Signal Flow
+## 2. DSP Architecture and Signal Flow
 
 ### **Stage 1 — Spectral Analysis**  
 Incoming audio is segmented into short windows and transformed to the frequency domain using FFT.  
@@ -79,7 +62,7 @@ This deformation reshapes the spectral profile according to the evolving structu
 The processed data is returned to Cartesian coordinates and transformed back to the time domain via inverse FFT, producing a continuously evolving timbral transformation.
 
 
-## 4. Quantum Simulation Data
+## 3. Quantum Simulation Data
 
 Quantum states were simulated in Python by numerically solving the time-dependent Schrödinger equation for the QHO.
 
@@ -96,7 +79,7 @@ Each row of the matrix corresponds to the real part of the normalized wavefuncti
 These matrices drive the spectral shaping in the DSP engine.
 
 
-## 5. Artistic Potential
+## 4. Artistic Potential
 
 The DSP model is conceived as a performance-oriented tool that expands creative possibilities for musicians and sound artists.
 
@@ -110,7 +93,7 @@ This tool also serves educational and outreach purposes, offering an accessible 
 
 Future developments aim to refine interaction design, collaborate with performers, and explore a standalone hardware implementation (e.g., pedal-based unit).
 
-## 6. Requirements
+## 5. Requirements
 
 - Max/MSP 8+  
 - Ableton Live + Max for Live (optional)
