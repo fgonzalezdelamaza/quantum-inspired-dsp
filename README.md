@@ -5,7 +5,7 @@ This repository contains the Max/MSP and Max for Live implementation of a real-t
 
 ## 1. Conceptual Basis
 
-This DSP model takes as input a sound captured from a stochastically excited string and transforms it by applying the time evolution of the QHO wavefunction.  
+This DSP model takes as input a sound and transforms it by applying the time evolution of the QHO wavefunction.  
 The evolution of coherent states and their superpositions (“kitten states”) is used as a dynamic control structure that modulates the spectral content of the signal in real time.
 
 Each time step of the simulated wavefunction corresponds to one modulation frame.  
